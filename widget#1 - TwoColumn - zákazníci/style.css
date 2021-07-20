@@ -5,20 +5,19 @@
           box-sizing: border-box;
 }
 
-.pobo-evaluation-two {
-  max-width: 1300px;
+.pb-evaluation-two {
   margin: auto;
   width: 100%;
   font-family: "Roboto",sans-serif;
 }
 
-.pobo-evaluation-two__title {
+.pb-evaluation-two__title {
   width: 100%;
   padding: 30px 20px;
   background: white;
 }
 
-.pobo-evaluation-two__contents {
+.pb-evaluation-two__contents {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,7 +29,17 @@
           flex-direction: row;
 }
 
-.pobo-evaluation-two__obl-single {
+@media only screen and (max-width: 830px) {
+  .pb-evaluation-two__contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+  }
+}
+
+.pb-evaluation-two__obl-single {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,46 +51,36 @@
   margin: 20px;
 }
 
-.pobo-evaluation-two__single {
+@media only screen and (max-width: 830px) {
+  .pb-evaluation-two__obl-single {
+    width: 100%;
+    margin: 30px 0px;
+    padding: 0px;
+  }
+}
+
+.pb-evaluation-two__single {
   width: 100%;
   margin-left: 20px;
   border: 1px solid black;
   padding: 30px;
 }
 
-.pobo-ev-title {
-  text-align: center;
-  margin: 30px 0;
-  font-weight: 400;
+@media only screen and (max-width: 830px) {
+  .pb-evaluation-two__single {
+    margin: 0px;
+  }
 }
 
-.pobo-ev-title:before {
-  background: black;
-  content: "";
-  width: 100%;
-  height: 1px;
-  display: block;
-  margin-bottom: -24px;
-}
-
-.pobo-ev-span {
-  font-size: 30px;
-  background: white;
-  padding: 0 20px;
-}
-
-img.pobo-evaluation-logo {
-  width: 100%;
-}
-
-.pobo-evaluation-logo {
+.pb-evaluation-two__logo {
   margin: -55px auto 0 auto;
   display: block;
   max-width: 200px;
+  width: 100%;
   background: white;
 }
 
-.pobo-ev-text {
+.pb-evaluation-two__text-in {
   padding-top: 10px;
   padding-right: 20px;
   padding-left: 20px;
@@ -93,7 +92,28 @@ img.pobo-evaluation-logo {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.pobo-ev-button {
+.pb-evaluation-two__header {
+  text-align: center;
+  margin: 30px 0;
+  font-weight: 400;
+}
+
+.pb-evaluation-two__header:before {
+  background: black;
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: block;
+  margin-bottom: -24px;
+}
+
+.pb-evaluation-two__span {
+  font-size: 30px;
+  background: white;
+  padding: 0 20px;
+}
+
+.pb-evaluation-two__button {
   width: 100%;
   margin: 5px 20px;
   display: -webkit-box;
@@ -104,35 +124,20 @@ img.pobo-evaluation-logo {
           justify-content: flex-end;
 }
 
-.pobo-ev-button__btn {
+@media only screen and (max-width: 830px) {
+  .pb-evaluation-two__button {
+    margin: 5px 0px;
+  }
+}
+
+.pb-evaluation-two__button__btn {
   background: #2e2e2e;
   display: block;
   padding: 5px 10px;
 }
 
-.pobo-ev-button__btn a {
+.pb-evaluation-two__button__btn a {
   color: #f0f0f0;
   text-decoration: none;
-}
-
-@media only screen and (max-width: 830px) {
-  .pobo-evaluation-two__obl-single {
-    width: 100%;
-    margin: 30px 0px;
-    padding: 0px;
-  }
-  .pobo-evaluation-two__single {
-    margin: 0px;
-  }
-  .pobo-evaluation-two__contents {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 10px;
-  }
-  .pobo-ev-button {
-    margin: 5px 0px;
-  }
 }
 /*# sourceMappingURL=style.css.map */
