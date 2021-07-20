@@ -5,12 +5,9 @@
           box-sizing: border-box;
 }
 
-body {
+.pobo-evaluation-two {
   max-width: 1300px;
   margin: auto;
-}
-
-.pobo-evaluation-two {
   width: 100%;
   font-family: "Roboto",sans-serif;
 }
@@ -93,6 +90,7 @@ img.pobo-evaluation-logo {
   font-size: 20px;
   line-height: 1.7;
   font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .pobo-ev-button {
